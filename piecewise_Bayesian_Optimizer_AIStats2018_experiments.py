@@ -1,5 +1,9 @@
 
-#Using something like particle-filter for Bayesian optimization
+#This is an implementation of piece-wise Gaussian process for constrained Bayesian optimization
+#The experiment is implemented for the following problem:
+#    min x^2
+#    s.t. g(x)<0
+#with g(x) being a noisy step-function.
 
 import numpy as np
 import nlopt
